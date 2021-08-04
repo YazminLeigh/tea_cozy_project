@@ -1,29 +1,36 @@
+html body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: black;
     color: seashell;
-    opacity: 0.9;
     font-family: Helvetica, sans-serif;
     font-size: 22px;
-    overflow: hidden
+    list-style: none;
+}
+
+.container body {
+    width: 1200px;
 }
 
 h2 {
-    font-size: 1.5rem;
-    padding-top: 10px;
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 h4 {
-    font-size: 1 rem;
-    padding-bottom: 10px;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
 }
 
-ul {
-    list-style: none;
-    /* display: flex; */
-    /* margin-right: 10px; */
+#header {
+    position: fixed;
 }
 
 .navigation-container {
@@ -32,27 +39,24 @@ ul {
     border-bottom: 1px solid seashell;
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
+    overflow: hidden
 }
 
 .logo {
-    display: inline-flex;
     height: 50px;
     margin-left: 10px;
-    align-self: center;    
+    align-self: center;
+    opacity: 0.9;   
 }
-
+ 
 #list {
     display: inline-flex;
     align-items: center;
 }
 
 .list-item {
-    margin-right: 20px;
-}
-
-.list-item-last {
-    margin-right: 10px;
+    margin-right: 1.5rem;
+    opacity: 0.9;
 }
 
 .list-container {
@@ -60,24 +64,64 @@ ul {
     justify-content: space-between;
 }
 
-.banner-container {
+.mission-container {
+    top: 70px;
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    
+    position: relative;
+    justify-content: center;
+    align-items: center;   
+    background-image: url("resources/images/img-mission-background.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 700px;
+    width: 100%;
+    opacity: 0.9;
 }
 
-#banner-img {
-    background-image: url(resources/images/img-mission-background.webp);
-    background-repeat: no-repeat;
-    height: 700px;
+.mission-banner {
+    text-align: center;
+    background-color: black;
     width: 100%;
 }
 
-#banner {
+.tea-container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
+    margin-top: 3rem;
+}
+
+.gallery-container {
+    display: flex;
+    width: 83.3%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    left: 1.5rem;
+}
+
+.imgBox {
+    height: 200px;
+    width: 300px;
+    opacity: 0.9;
+}
+
+
+#galleryImg {
+    height: 200px;
+    width: 300px;
+}
+
+.content {
     text-align: center;
-    background-color: black;
-    opacity: 1;
-    width: 1200px;
+    display: block;
+    margin: 10px 0;
 }
