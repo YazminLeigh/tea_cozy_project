@@ -25,12 +25,17 @@ h2 {
 }
 
 h4 {
+    text-align: center;
+}
+
+h4 {
     font-size: 0.8rem;
     padding-bottom: 0.5rem;
 }
 
 #header {
     position: fixed;
+    z-index: 1;
 }
 
 .navigation-container {
@@ -67,13 +72,12 @@ h4 {
 .mission-container {
     top: 70px;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;   
     background-image: url("resources/images/img-mission-background.webp");
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 700px;
+    height: 35rem;
     width: 100%;
     opacity: 0.9;
 }
@@ -91,21 +95,23 @@ h4 {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .gallery-container {
     display: flex;
-    width: 83.3%;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-
+    margin-top: 1rem;
+    /* max-width: 1000px; */
+    
 }
 .card {
     display: flex;
     flex-direction: column;
     left: 1.5rem;
+    padding: 0.3rem 1rem;
 }
 
 .imgBox {
@@ -125,3 +131,59 @@ h4 {
     display: block;
     margin: 10px 0;
 }
+
+.location-container {
+    display: flex;
+    height: 500px;
+    /* width: 100%; */
+    margin-top: 4rem;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-flow: row wrap; */
+    flex-direction: column;
+    background-image: url("resources/images/img-locations-background.webp");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.locations-title {
+    /* margin-top: 10px; */
+    background-color: transparent;
+    text-align: center;
+}
+
+#locations {
+    background-color: transparent;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* flex-flow: row wrap; */
+    height: 230px;
+    /* width: 80%; */
+    /* align-items: center; */
+    background-color: transparent;
+}
+
+.locationCard {
+    margin: 0 15px;
+    height: 100%;
+    width: 300px;
+}
+
+#locationTitle{
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+
+#locationContent {
+    text-align: center;
+    font-weight: lighter;
+    padding: 0.8rem 0;
+    
+}
+
+
