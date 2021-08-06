@@ -186,4 +186,23 @@ h4 {
     
 }
 
+.contact-container {
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: left;
+    margin: 1rem 0;
+    margin-left: 1rem;
+}
+
+.copyright {
+    color: gray;
+}
+
 
